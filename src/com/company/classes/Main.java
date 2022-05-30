@@ -29,7 +29,7 @@ public class Main {
 
         JSONArray array = new JSONArray();
         array.add(obj);
-        //System.out.println(obj.toJSONString());
+        System.out.println(obj.toJSONString());
 
 
         Cryptocurrencys cryptocurrencys = new Cryptocurrencys();
@@ -65,7 +65,10 @@ public class Main {
         cryptocurrencys.getList().sort(Cryptocurrency.byVolumeUsd24H);
         System.out.println("---------------------------------------");
         System.out.println("After sorted by sales volume USD 24 hours:\n" + cryptocurrencys);
+        System.out.println("---------------------------------------\n");
+        System.out.println(cryptocurrencys.getList("bit"));
     }
+
 }
 
 
